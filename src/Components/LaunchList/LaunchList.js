@@ -11,11 +11,6 @@ const LaunchList = (props) => {
 
     return (
         <>
-            {/* {
-            launchData.map(data =>console.log(data))
-        } */}
-
-            {/* Launch List goes here ... */}
             <Launch
                 imageUrl={url}
                 name={name}
@@ -25,5 +20,4 @@ const LaunchList = (props) => {
         </>
     )
 }
-
 export default LaunchList

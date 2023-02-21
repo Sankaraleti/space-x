@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import LaunchList from '../LaunchList/LaunchList';
+import { Link } from "react-router-dom"
 function GetData() {
     const [data, setData] = useState([])
     useEffect(() => {
@@ -16,7 +17,9 @@ function GetData() {
             {
                 data.map(launchData => {
                     return (
-                        < LaunchList key={Math.random()} data={launchData} />
+                        <Link to="/launch" style={{ textDecoration: "none" }}>
+                            < LaunchList key={Math.random()} data={launchData} />
+                        </Link>
                     )
                 })
             }
