@@ -1,19 +1,19 @@
 import React from 'react'
 import Header from './Components/Header/Header'
-import LaunchList from './Components/LaunchList/LaunchList'
+import GetData from './Components/GetApiData/GetData'
 import './style.css'
 function App() {
   return (
     <div className="App">
       <Header />
-      <LaunchList />
-
+      {/* <LaunchList /> */}
+      <GetData />
     </div>
   );
 }
 
 
 // GitHub token
-// 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
+// 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
 
 export default App;

@@ -4,7 +4,7 @@ const Launch = (props) => {
     return (
         <>
             <div className="launch">
-                <div class="image">
+                <div className="image">
                     <img src={props.imageUrl} alt="Racket" />
                 </div>
                 <div className="info">
